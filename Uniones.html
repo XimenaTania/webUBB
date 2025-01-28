@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Estilos/globales.css">
+
+    <style>
+        body { font-family: Arial, sans-serif; 
+           background-color: #f0f0f0; margin: 0; 
+           padding: 20px; display: flex; 
+           justify-content: center;
+        } .container { max-width: 1200px; 
+           width: 100%; 
+           display: grid; grid-template-columns: repeat(2, 1fr);
+            gap: 20px; } .union { background-color: 
+               #fff; border-radius: 10px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+                padding: 20px; text-align: center;
+                 transition: transform 0.3s ease, box-shadow 0.3s ease; 
+               } .union:hover { transform: translateY(-10px);
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                    } .union img { width: 100%; 
+                       height: auto; border-radius: 10px;
+                    } .title { font-size: 1.5em;
+                        color: #007bff; 
+                        margin-top: 10px; 
+                       } .description { font-size: 1em;
+                            margin-top: 10px; } @media (max-width: 600px)
+                             { .container { grid-template-columns: 1fr; } 
+                             .title { font-size: 1.2em; 
+                           } .description { font-size: 0.9em; } }
+   </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="union">
+            <img src="union1.jpg" alt="Unión 1">
+            <div class="title">Unión de Jóvenes 1</div>
+            <div class="description">*Descripción breve de lo mejor de esta unión*</div>
+        </div>
+        <div class="union">
+            <img src="union2.jpg" alt="Unión 2">
+            <div class="title">Unión de Jóvenes 2</div>
+            <div class="description">*Descripción breve de lo mejor de esta unión*</div>
+        </div>
+        <div class="union">
+            <img src="union3.jpg" alt="Unión 3">
+            <div class="title">Unión de Jóvenes 3</div>
+            <div class="description">*Descripción breve de lo mejor de esta unión*</div>
+        </div>
+        <div class="union">
+            <img src="union4.jpg" alt="Unión 4">
+            <div class="title">Unión de Jóvenes 4</div>
+            <div class="description">*Descripción breve de lo mejor de esta unión*</div>
+        </div>
+    </div>
+</body>
+</html>

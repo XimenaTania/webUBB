@@ -1,0 +1,109 @@
+/* Estilos Encabezado*/
+/*.color1 { #8ac2c6 };
+.color2 { #78b0b4 };
+.color3 { #679ea2 };
+.color4 { #558c90 };
+.color5 { #437a7e };
+...........
+.color1 { #5199ad };
+.color2 { #3d889c };
+.color3 { #29778a };
+.color4 { #146679 };
+.color5 { #005567 };
+..............
+.color1 { #b7475b };
+.color2 { #a4354c };
+.color3 { #90243d };
+.color4 { #7d122e };
+.color5 { #69001f };
+..................
+.color1 { #779fd3 };
+.color2 { #90b7de };
+.color3 { #aacfe9 };
+.color4 { #c3e7f4 };
+.color5 { #dcffff };*/
+header {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.header-escritorio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #40636D;
+    padding: 10px;
+}
+.header-logo {
+    width: 150px;
+    height: 50px;
+}
+.header-nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.header-nav ul li {
+    position: relative;
+}
+.header-nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+.header-nav ul li a:hover {
+    background-color: #76939b;
+}
+.header-nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #76939b;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.header-nav .dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: white;
+}
+.header-nav .dropdown-content a:hover {
+    background-color: #575757;
+}
+.header-nav ul li:hover .dropdown-content {
+    display: block;
+}
+.menu-hamburguesa {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+.menu-hamburguesa div {
+    width: 25px;
+    height: 3px;
+    background-color: white; 
+    margin: 4px;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 600px) {
+    .header-nav ul {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+    }
+    .header-nav ul li {
+        width: 100%;
+    }
+    .menu-hamburguesa {
+        display: flex;
+    }
+    .menu-hamburguesa-nav {
+        display: flex;
+        flex-direction: column;
+    }
+}

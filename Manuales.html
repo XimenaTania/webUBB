@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Manuales</title>
+    <link rel="stylesheet" href="./Estilos/globales.css">
+    <h2 id="info" class="section-title"> Manuales y reglamentos </h2>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+        .item:hover {
+            transform: scale(1.05);
+        }
+        .item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .title {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 0 0 10px 10px;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            <div class="title">Estatuto de la UNIÓN BAUTISTA BOLIVIANA </div>
+            <img src="/ImgeIEBLA/UBB.jpg" alt="Imagen 1">
+            <a href="manual1.pdf" class="button">Descargar el manual</a>
+        </div>
+        <!-- Repite para las demás imágenes -->
+        <div class="item">
+            <div class="title">Reglamento de la UNION BAUTISTA BOLIVIANA </div>
+            <img src="/ImgeIEBLA/UBB.jpg" alt="Imagen 2">
+            <a href="manual2.pdf" class="button">Descargar el manual</a>
+        </div>
+        <div class="item">
+            <div class="title">Reglamente del CGC</div>
+            <img src="/ImgeIEBLA/UBB.jpg" alt="Imagen 3">
+            <a href="manual3.pdf" class="button">Descargar el manual</a>
+        </div>
+        <div class="item">
+            <div class="title">Reglamento CODE</div>
+            <img src="/ImgeIEBLA/UBB.jpg" alt="Imagen 4">
+            <a href="manual4.pdf" class="button">Descargar el manual</a>
+        </div>
+        <div class="item">
+            <div class="title">Reglamentos UNP</div>
+            <img src="/ImgeIEBLA/UBB.jpg" alt="Imagen 5">
+            <a href="manual5.pdf" class="button">Descargar el manual</a>
+        </div>
+        <div class="item">
+            <div class="title">Reglamento UFMBB</div>
+            <img src="/ImgeIEBLA/UBB.jpg" alt="Imagen 6">
+            <a href="manual6.pdf" class="button">Descargar el manual</a>
+        </div>
+        <div class="item">
+            <div class="title">Reglamento UJBB</div>
+            <img src="/ImgeIEBLA/UBB.jpg" alt="Imagen 7">
+            <a href="manual7.pdf" class="button">Descargar el manual</a>
+        </div>
+        <div class="item">
+            <div class="title">Manual Bautista Actualizado</div>
+            <img src="/ImgeIEBLA/UBB.jpg" alt="Imagen 8">
+            <a href="manual8.pdf" class="button">Descargar el manual</a>
+        </div>
+    </div>
+</body>
+</html>
