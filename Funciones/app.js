@@ -3,7 +3,7 @@ window.onload = () => {
   document.querySelector("header").innerHTML = `
 <div class="header-escritorio">
         <a title="UBB" href="#top">
-            <img class="header-logo" src="/ImgeIEBLA/UBB4.png" alt="Logo de UBB" />
+            <img class="header-logo" src="/UBB4.png" alt="Logo de UBB" />
         </a>
         <nav class="header-nav">
             <ul>
